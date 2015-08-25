@@ -1,11 +1,11 @@
 #include "stdafx.h"
 #include "ThreadPool.h"
 
-using namespace Util::Thread;
+using namespace Util::Work;
 
 void CALLBACK DefaultWorkApplicationFunction(PTP_CALLBACK_INSTANCE instance, void * context, PTP_WORK work)
 {
-	Util::Thread::WorkItem * wi = reinterpret_cast<Util::Thread::WorkItem*>(context);
+	Util::Work::WorkItem * wi = reinterpret_cast<Util::Thread::WorkItem*>(context);
 	wi->func(wi->data);
 	CloseThreadpoolWork(work);
 }
@@ -45,7 +45,7 @@ void ThreadPool::initalize( int nbrThreads )
 	SetThreadpoolCallbackCleanupGroup(mEnviro, mCleanGroup, nullptr);
 }
 
-void Util::Thread::ThreadPool::submitWork(WorkItem * item)
+void Util::Work::ThreadPool::submitWork(WorkItem * item)
 {
 	PTP_WORK work = CreateThreadpoolWork(DefaultWorkApplicationFunction,
 		reinterpret_cast<void*>(item),
@@ -55,7 +55,7 @@ void Util::Thread::ThreadPool::submitWork(WorkItem * item)
 }
 
 
-int Util::Thread::getMaxNumberOfHardwareThreads()
+int Util::Work::getMaxNumberOfHardwareThreads()
 {
 	SYSTEM_INFO sysinfo;
 	GetSystemInfo( &sysinfo );
@@ -64,8 +64,3 @@ int Util::Thread::getMaxNumberOfHardwareThreads()
 }
 
 
-
-void Util::Workers::Que(const WorkItem item)
-{
-
-}

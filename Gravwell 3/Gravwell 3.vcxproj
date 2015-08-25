@@ -234,6 +234,7 @@
     <ClInclude Include="FreeListVector.h" />
     <ClInclude Include="GenericHandle.h" />
     <ClInclude Include="GenericHandleManager.h" />
+    <ClInclude Include="Job.h" />
     <ClInclude Include="LargeObjectManager.h" />
     <ClInclude Include="LowLevelTest.h" />
     <ClInclude Include="Math.h" />
@@ -271,6 +272,7 @@
     <ClInclude Include="VertexTypeDescription.h" />
     <ClInclude Include="VertexTypeManager.h" />
     <ClInclude Include="Window.h" />
+    <ClInclude Include="Work.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
@@ -285,6 +287,7 @@
     <ClCompile Include="GenericHandle.cpp" />
     <ClCompile Include="Gravwell 3.cpp" />
     <ClCompile Include="IndexBufferManager.cpp" />
+    <ClCompile Include="Job.cpp" />
     <ClCompile Include="LargeObjectManager.cpp" />
     <ClCompile Include="LowLevelTest.cpp" />
     <ClCompile Include="Material.cpp" />
@@ -316,6 +319,7 @@
     <ClCompile Include="VertexShaderManager.cpp" />
     <ClCompile Include="VertexTypeManager.cpp" />
     <ClCompile Include="Window.cpp" />
+    <ClCompile Include="Work.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Gravwell 3.rc" />

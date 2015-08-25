@@ -1,23 +1,11 @@
-
+#include <atomic>
+#include "Work.h"
 
 namespace Util
 {
-	namespace Thread
+	namespace Work
 	{
-		struct WorkData
-		{
-			void * allocator;
-			void * inData;
-			void * outData;
-		};
-
-		typedef void(*WorkFunction)(WorkData data);
-
-		struct WorkItem
-		{
-			WorkFunction func;
-			WorkData	 data;
-		};
+		
 
 		class ThreadPool
 		{
@@ -30,43 +18,32 @@ namespace Util
 			ThreadPool();
 			~ThreadPool();
 
-			void initalize( int nbrThreads = 0 );
+			void initalize(int nbrThreads = 0);
 
 			void submitWork(WorkItem * item);
 
 
-						
+
 		};
 
 		int getMaxNumberOfHardwareThreads();
-	}
 
-	
-	struct Job
-	{
-		atomic::int waiting;
-		Job * dependents[4];
-		WorkItem item;
-		int test;
-	};
-
-	typedef __int32 JobHandle;
-
-	class Jobs
-	{
 		
-		std::vector<Job> noDep;
-		std::vector<Job> Dep;
-		
-	public:
-		Job create(WorkFunction func, void * inData, void * outData, void * allocator = nullptr);
-		prepare(Job first, Job second);
-		prepare(Job first, Job second, Job third);
-		submit(Job job);
-		submitMultiple(Job * jobs, int nbr);
+
+		class Jobs
+		{
+			CRITICAL_SECTION vectorLock;
+			std::vector<Job> Dep;
+
+		public:
+
+			void createSubmit(WorkFunction func, void * inData, void * outData);
+
+			// Also will add all the dependents from the job to the waiting array
+			// In debug mode will fail if you attempt to add a Job with its waiting member not = 0 
+			submit(Job job);
+		};
+
 
 	};
-
-
-
 }

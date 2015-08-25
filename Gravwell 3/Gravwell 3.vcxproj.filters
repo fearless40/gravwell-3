@@ -210,6 +210,12 @@
     <ClInclude Include="ThreadPool.h">
       <Filter>Utility</Filter>
     </ClInclude>
+    <ClInclude Include="Work.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Job.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -319,6 +325,12 @@
     </ClCompile>
     <ClCompile Include="ThreadPool.cpp">
       <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Work.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Job.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
