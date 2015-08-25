@@ -1,0 +1,59 @@
+﻿Build started 10/10/2014 11:11:44 PM.
+     1>Project "E:\Programming\Gravwell 3\Gravwell 3\Gravwell 3.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Applications\Visual Studio 2012\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /MP /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /Zp16 /GS /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\Gravwell 3.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt Camera.cpp D3D11App.cpp
+     1>cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+     1>cl : Command line warning D9030: '/Gm' is incompatible with multiprocessing; ignoring /MP switch
+         Camera.cpp
+         Generating Code...
+         Compiling...
+         D3D11App.cpp
+     1>D3D11App.cpp(133): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>e:\programming\gravwell 3\gravwell 3\MeshBuilder.h(61): warning C4267: 'argument' : conversion from 'size_t' to 'MeshCPU::ulong', possible loss of data
+                 e:\programming\gravwell 3\gravwell 3\MeshBuilder.h(59) : while compiling class template member function 'RefCountPointer<type> MeshBuilder<VertexType,IndexType>::toMeshVertexCPU(void)'
+                 with
+                 [
+                     type=MeshVertexCPU<VertexTypeManager::VertexPosNormalUV>,
+                     VertexType=VertexTypeManager::VertexPosNormalUV,
+                     IndexType=int
+                 ]
+                 D3D11App.cpp(129) : see reference to function template instantiation 'RefCountPointer<type> MeshBuilder<VertexType,IndexType>::toMeshVertexCPU(void)' being compiled
+                 with
+                 [
+                     type=MeshVertexCPU<VertexTypeManager::VertexPosNormalUV>,
+                     VertexType=VertexTypeManager::VertexPosNormalUV,
+                     IndexType=int
+                 ]
+                 e:\programming\gravwell 3\gravwell 3\MeshGeneratorHelper.h(224) : see reference to class template instantiation 'MeshBuilder<VertexType,IndexType>' being compiled
+                 with
+                 [
+                     VertexType=VertexTypeManager::VertexPosNormalUV,
+                     IndexType=int
+                 ]
+     1>e:\programming\gravwell 3\gravwell 3\MeshBuilder.h(62): warning C4267: 'argument' : conversion from 'size_t' to 'MeshCPU::ulong', possible loss of data
+         Generating Code...
+       Link:
+         D:\Applications\Visual Studio 2012\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Programming\Gravwell 3\x64\Debug\Gravwell 3.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Programming\Gravwell 3\x64\Debug\Gravwell 3.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Programming\Gravwell 3\x64\Debug\Gravwell 3.lib" /MACHINE:X64 "x64\Debug\Gravwell 3.res"
+         x64\Debug\App.obj
+         x64\Debug\BoxGenerator.obj
+         x64\Debug\Camera.obj
+         x64\Debug\ConstantBuffer.obj
+         x64\Debug\D3D11.obj
+         x64\Debug\D3D11App.obj
+         x64\Debug\D3DWindow.obj
+         "x64\Debug\Gravwell 3.obj"
+         x64\Debug\MeshCPU.obj
+         x64\Debug\MeshGeneratorHelper.obj
+         x64\Debug\MeshStatic.obj
+         x64\Debug\ModelStatic.obj
+         x64\Debug\PlaneGenerator.obj
+         x64\Debug\ShaderManager.obj
+         x64\Debug\stdafx.obj
+         x64\Debug\VertexTypeManager.obj
+         x64\Debug\Window.obj
+         Gravwell 3.vcxproj -> E:\Programming\Gravwell 3\x64\Debug\Gravwell 3.exe
+     1>Done Building Project "E:\Programming\Gravwell 3\Gravwell 3\Gravwell 3.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.97

@@ -1,0 +1,16 @@
+﻿Build started 10/10/2014 11:08:02 PM.
+     1>Project "E:\Programming\Gravwell 3\TestingApp\TestingApp.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         D:\Applications\Visual Studio 2012\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"x64\Debug\TestingApp.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\Applications\Visual Studio 2012\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\TestingApp.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt TestingApp.cpp
+         TestingApp.cpp
+       Link:
+         D:\Applications\Visual Studio 2012\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Programming\Gravwell 3\x64\Debug\TestingApp.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Programming\Gravwell 3\x64\Debug\TestingApp.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Programming\Gravwell 3\x64\Debug\TestingApp.lib" /MACHINE:X64 x64\Debug\stdafx.obj
+         x64\Debug\TestingApp.obj
+         TestingApp.vcxproj -> E:\Programming\Gravwell 3\x64\Debug\TestingApp.exe
+     1>Done Building Project "E:\Programming\Gravwell 3\TestingApp\TestingApp.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.03

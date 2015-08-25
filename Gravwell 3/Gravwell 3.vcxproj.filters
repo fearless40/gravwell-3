@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Pixel Shaders">
+      <UniqueIdentifier>{565bddef-95aa-4d7d-85c0-d51b48b233b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vertex Shaders">
+      <UniqueIdentifier>{602b00d4-cbf3-4628-bbc9-c947202cd7a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="D3D">
+      <UniqueIdentifier>{73d48642-3c34-4948-9c97-39b3796592f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Procedural">
+      <UniqueIdentifier>{b3ad3bb5-8f84-426b-b1df-e750fed966f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{425fdd9d-d876-4bd2-91fa-ed691069a682}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{55629557-368c-428a-ae17-a0a8169b6cfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CPU 3D">
+      <UniqueIdentifier>{14e48c84-7789-4b9a-9069-879760503626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{eea7e9e2-5bb4-48e5-9866-3a88227124d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity Managers">
+      <UniqueIdentifier>{8aea088e-0474-47ef-a3be-f3dfb0c8e3e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Managment">
+      <UniqueIdentifier>{a26e0f37-0142-46be-9f72-995592926da6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cullers">
+      <UniqueIdentifier>{63b9916e-c62f-4b32-b412-180b2f8ad1b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{7a67ce18-fd6f-4e33-a643-8350a40949ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic Tests">
+      <UniqueIdentifier>{97d0b30e-a8da-43df-ae85-aea1d51caaf4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="Engine layout.txt">
+      <Filter>Engine</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Gravwell 3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="App.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D11App.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexTypeDescription.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexTypeManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D11.h">
+      <Filter>D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Procedural.h">
+      <Filter>Procedural</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaneGenerator.h">
+      <Filter>Procedural</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxGenerator.h">
+      <Filter>Procedural</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshGeneratorHelper.h">
+      <Filter>Procedural</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelBuilder.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderQue.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderableInstance.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Render.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderManager.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshCPU.h">
+      <Filter>CPU 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshBuilder.h">
+      <Filter>CPU 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeListVector.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Handles.h">
+      <Filter>D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="GenericHandleManager.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="GenericHandle.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshManager.h">
+      <Filter>D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelManager.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexShaderManager.h">
+      <Filter>D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="InvasiveRefCount.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="RefCountPointer.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="D3DPointer.h">
+      <Filter>D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexBufferManager.h">
+      <Filter>D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferManagerHelpers.h">
+      <Filter>D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexBufferManager.h">
+      <Filter>D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantBufferManager.h">
+      <Filter>D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantBufferArrayManager.h">
+      <Filter>D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="TagArray.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="SphereGenerator.h">
+      <Filter>Procedural</Filter>
+    </ClInclude>
+    <ClInclude Include="LargeObjectManager.h">
+      <Filter>Entity Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Cull2DBoxVsSphereWithOffset.h">
+      <Filter>Cullers</Filter>
+    </ClInclude>
+    <ClInclude Include="MicroManager.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="LowLevelTest.h">
+      <Filter>Graphic Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="MicroMangerTest.h">
+      <Filter>Graphic Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Gravwell 3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D3D11App.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexTypeManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D3D11.cpp">
+      <Filter>D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaneGenerator.cpp">
+      <Filter>Procedural</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxGenerator.cpp">
+      <Filter>Procedural</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshGeneratorHelper.cpp">
+      <Filter>Procedural</Filter>
+    </ClCompile>
+    <ClCompile Include="MakeBox.cpp">
+      <Filter>Procedural</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelBuilder.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderQue.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderableInstance.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderManager.cpp">
+      <Filter>Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshCPU.cpp">
+      <Filter>CPU 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GenericHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshManager.cpp">
+      <Filter>D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelManager.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexShaderManager.cpp">
+      <Filter>D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexBufferManager.cpp">
+      <Filter>D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="BufferManagerHelpers.cpp">
+      <Filter>D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexBufferManager.cpp">
+      <Filter>D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstantBufferManager.cpp">
+      <Filter>D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstantBufferArrayManager.cpp">
+      <Filter>D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="SphereGenerator.cpp">
+      <Filter>Procedural</Filter>
+    </ClCompile>
+    <ClCompile Include="LargeObjectManager.cpp">
+      <Filter>Entity Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="MicroManager.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="LowLevelTest.cpp">
+      <Filter>Graphic Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="MicroManagerTest.cpp">
+      <Filter>Graphic Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadPool.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Gravwell 3.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Gravwell 3.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Media\VertexShaders\VertexShader.hlsl">
+      <Filter>Vertex Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Media\PixelShaders\PixelShader.hlsl">
+      <Filter>Pixel Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Media\VertexShaders\VSPosColor.hlsl">
+      <Filter>Vertex Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Media\PixelShaders\PSPosColor.hlsl">
+      <Filter>Pixel Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Media\VertexShaders\VSPosNormalUV.hlsl">
+      <Filter>Vertex Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Media\PixelShaders\PSPosNormalUV.hlsl">
+      <Filter>Pixel Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Media\VertexShaders\VSPosUV.hlsl">
+      <Filter>Vertex Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Media\PixelShaders\PSPosUV.hlsl">
+      <Filter>Pixel Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Media\VertexShaders\EngineVSPosNormalUV.hlsl">
+      <Filter>Vertex Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

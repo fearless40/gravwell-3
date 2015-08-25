@@ -1,0 +1,40 @@
+﻿Build started 10/10/2014 11:07:36 PM.
+     1>Project "E:\Programming\Gravwell 3\Gravwell 3\Gravwell 3.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Applications\Visual Studio 2012\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /MP /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /Zp16 /GS /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debugx64\Gravwell 3.pch" /Fo"x64\Debugx64\\" /Fd"x64\Debugx64\vc110.pdb" /Gd /TP /errorReport:prompt D3D11.cpp
+     1>cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+         D3D11.cpp
+     1>D3D11.cpp(53): warning C4101: 'stringLength' : unreferenced local variable
+     1>D3D11.cpp(160): warning C4101: 'depthStencilViewDesc' : unreferenced local variable
+     1>D3D11.cpp(159): warning C4101: 'depthStencilDesc' : unreferenced local variable
+     1>D3D11.cpp(163): warning C4101: 'fieldOfView' : unreferenced local variable
+     1>D3D11.cpp(163): warning C4101: 'screenAspect' : unreferenced local variable
+     1>D3D11.cpp(158): warning C4101: 'depthBufferDesc' : unreferenced local variable
+     1>D3D11.cpp(406): warning C4244: '=' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>D3D11.cpp(407): warning C4244: '=' : conversion from 'int' to 'FLOAT', possible loss of data
+     1>e:\programming\gravwell 3\gravwell 3\d3d11.cpp(413): warning C4715: 'D3D11::resizeWindow' : not all control paths return a value
+       Link:
+         D:\Applications\Visual Studio 2012\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Programming\Gravwell 3\x64\Debugx64\Gravwell 3.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Programming\Gravwell 3\x64\Debugx64\Gravwell 3.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Programming\Gravwell 3\x64\Debugx64\Gravwell 3.lib" /MACHINE:X64 "x64\Debugx64\Gravwell 3.res"
+         x64\Debugx64\App.obj
+         x64\Debugx64\BoxGenerator.obj
+         x64\Debugx64\Camera.obj
+         x64\Debugx64\ConstantBuffer.obj
+         x64\Debugx64\D3D11.obj
+         x64\Debugx64\D3D11App.obj
+         x64\Debugx64\D3DWindow.obj
+         "x64\Debugx64\Gravwell 3.obj"
+         x64\Debugx64\MeshCPU.obj
+         x64\Debugx64\MeshGeneratorHelper.obj
+         x64\Debugx64\MeshStatic.obj
+         x64\Debugx64\ModelStatic.obj
+         x64\Debugx64\PlaneGenerator.obj
+         x64\Debugx64\ShaderManager.obj
+         x64\Debugx64\stdafx.obj
+         x64\Debugx64\VertexTypeManager.obj
+         x64\Debugx64\Window.obj
+         Gravwell 3.vcxproj -> E:\Programming\Gravwell 3\x64\Debugx64\Gravwell 3.exe
+     1>Done Building Project "E:\Programming\Gravwell 3\Gravwell 3\Gravwell 3.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.06
