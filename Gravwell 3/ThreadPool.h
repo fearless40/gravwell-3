@@ -47,6 +47,7 @@ namespace Util
 		atomic::int waiting;
 		Job * dependents[4];
 		WorkItem item;
+		int test;
 	};
 
 	typedef __int32 JobHandle;
