@@ -8,13 +8,16 @@ namespace Util
 	namespace Work
 	{
 
+		class Jobs;
+		
 		static const int MaxNumberOfDependents = 4;
 
 		class Job
 		{
 		protected:
 			std::atomic_int mWaiting;
-			std::array<Job *, MaxNumberOfDependents> mDependents;
+			typedef std::array<Job *, MaxNumberOfDependents> JArray;
+			JArray mDependents;
 			int mNextDependent;
 
 			void incrementWaiting();
@@ -41,6 +44,8 @@ namespace Util
 			void addDependent(Job * job);
 			void addDependents(Job ** jobs, int nbrJobs);
 
+
+			friend class Jobs;
 		};
 	};
 };

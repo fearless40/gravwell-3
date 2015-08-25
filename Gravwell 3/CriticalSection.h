@@ -41,4 +41,5 @@ class CriticalSection
 };
 
 typedef LightMutex CriticalSection;
+
 };

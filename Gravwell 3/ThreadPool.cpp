@@ -7,6 +7,7 @@ void CALLBACK DefaultWorkApplicationFunction(PTP_CALLBACK_INSTANCE instance, voi
 {
 	Util::Work::WorkItem * wi = reinterpret_cast<Util::Thread::WorkItem*>(context);
 	wi->func(wi->data);
+	delete wi;
 	CloseThreadpoolWork(work);
 }
 
@@ -45,10 +46,10 @@ void ThreadPool::initalize( int nbrThreads )
 	SetThreadpoolCallbackCleanupGroup(mEnviro, mCleanGroup, nullptr);
 }
 
-void Util::Work::ThreadPool::submitWork(WorkItem * item)
+void Util::Work::ThreadPool::submitWork(WorkItem item)
 {
 	PTP_WORK work = CreateThreadpoolWork(DefaultWorkApplicationFunction,
-		reinterpret_cast<void*>(item),
+		reinterpret_cast<void*>new WorkItem(item),
 		mEnviro);
 
 
